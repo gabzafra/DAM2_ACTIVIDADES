@@ -1,22 +1,26 @@
 package hashmap;
 
-public class User {
+public class UserData {
 
-  private String name;
   private String pass;
   private boolean logged;
   private int tries;
 
 
-  public User() {
-    this("", "");
+  public UserData() {
+    this("");
   }
 
-  public User(String name, String pass) {
-    this.name = name;
+  public UserData(String pass) {
     this.pass = pass;
     logged = false;
     this.tries = 0;
+  }
+
+  public UserData(String pass, boolean logged, int tries) {
+    this.pass = pass;
+    this.logged = logged;
+    this.tries = tries;
   }
 
   public boolean isLogged() {
@@ -27,13 +31,6 @@ public class User {
     this.logged = logged;
   }
 
-  public String getName() {
-    return name;
-  }
-
-  public void setName(String name) {
-    this.name = name;
-  }
 
   public String getPass() {
     return pass;
