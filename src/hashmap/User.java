@@ -4,12 +4,17 @@ public class User {
 
   private String name;
   private String pass;
-  private int trys;
+  private int tries;
+
+
+  public User() {
+    this("", "");
+  }
 
   public User(String name, String pass) {
     this.name = name;
     this.pass = pass;
-    this.trys = 0;
+    this.tries = 0;
   }
 
   public String getName() {
@@ -28,11 +33,11 @@ public class User {
     this.pass = pass;
   }
 
-  public int getTrys() {
-    return trys;
+  public int getTries() {
+    return tries;
   }
 
-  public void setTrys(int trys) {
-    this.trys = trys;
+  public void setTries(int tries) {
+    this.tries = tries;
   }
 }
