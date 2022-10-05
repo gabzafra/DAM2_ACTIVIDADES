@@ -1,4 +1,4 @@
-# 1. Implementar una clase Juego con las siguientes características:
+# [1. Implementar una clase Juego con las siguientes características:](https://github.com/gabzafra/DAM2_ACTIVIDADES/tree/master/src/guiado_poo/parte1)
 ## Atributos
 . Tiene como atributo público un entero que indica el número de vidas que le quedan al jugador en la partida actual: numeroVidas
 ## Métodos
@@ -10,7 +10,7 @@
 - Resta una vida al valor del atributo con las vidas y vuelve a llamar a muestraVidasRestantes.
 - Crea otra instancia de la clase Juego indicando que el número de vidas es también de 5.
 - Llama al método muestraVidasRestantes de la nueva instancia y luego al de la instancia anterior
-# 2. Ocultación de atributos:
+[# 2. Ocultación de atributos:](https://github.com/gabzafra/DAM2_ACTIVIDADES/tree/master/src/guiado_poo/parte2)
 ## Atributos
 . Debe ocultarse a cualquier otra clase el atributo con las vidas. Para poder modificar este atributo, se crearán los dos nuevos métodos que se explican más adelante.
 . Crear un nuevo atributo, también privado, que guarde el número de vidas que inicialmente se le pasaron al constructor del objeto. Este atributo se utilizará para poder reiniciar el juego: vidasIniciales
@@ -24,7 +24,7 @@ Antes de modificar esta función, comprobar que ahora el compilador nos muestra 
 . Llamar al método quitaVida de una de las instancias de la clase Juego y a continuación al método muestraVidasRestantes.
 . Posteriormente llamar al método reiniciaPartida y de nuevo al método muestraVidasRestantes.
 . Llamar al método actualizaRecord de la primera instancia de Juego y a continuación llamar a este mismo método pero en la segunda instancia.
-# 3. Herencia y Polimorfismo
+[# 3. Herencia y Polimorfismo](https://github.com/gabzafra/DAM2_ACTIVIDADES/tree/master/src/guiado_poo/parte3)
 # Parte 1:
 ## Clase Juego
 . Añadirle un método abstracto juega que no tome parámetros y que tendrán que implementar las clases derivadas.
@@ -57,7 +57,7 @@ al jugador, con lo que sale del método juega.
 ## Clase Aplicacion
 . El método main crea una instancia de cada uno de los tres juegos creados: JuegoAdivinaNumero, JuegoAdivinaPar y JuegoAdivinaImpar. Como número de vidas de cada juego se pondrá 3 y como número a adivinar un número cualquiera, otro par y otro impar respectivamente, todos comprendidos entre el 0 y el 10.
 . Llama al método juega de cada una de las tres instancias.
-# 4. Interfaces
+[# 4. Interfaces](https://github.com/gabzafra/DAM2_ACTIVIDADES/tree/master/src/guiado_poo/parte4)
 # Parte 1:
 ## Clase Juego
 Se eliminará su método abstracto Juega, pero la clase se seguirá manteniendo como abstracta ya que no interesa que se creen instancias de ellas directamente.
